@@ -106,9 +106,11 @@ def generate_data(machine_identifier, conclusion, human_readable_timestamp, read
 def create_json(data, file_name):
     os.makedirs(json_target_dir, exist_ok=True)
     full_file_path = os.path.join(json_target_dir, file_name)
-    json_data = json.dumps(data, indent=4)
-    with open(full_file_path, 'w') as f:
-        f.write(json_data)
+        
+    tmp_file_path = f"{full_file_path}.tmp"
+    with open(tmp_file_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=4)
+    os.replace(tmp_file_path, full_file_path)
 
 
 def is_readable_text_file(file_path):
