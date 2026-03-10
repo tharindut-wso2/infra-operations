@@ -29,6 +29,9 @@ COPY config/default-ssl.conf /etc/apache2/sites-available/default-ssl.conf
 RUN a2ensite 000-default.conf \
     && a2ensite default-ssl.conf
 
+# PHP production settings
+COPY config/php-production.ini /usr/local/etc/php/conf.d/php-production.ini
+
 # App code
 COPY . /var/www/html/
 
