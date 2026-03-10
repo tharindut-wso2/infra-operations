@@ -25,11 +25,13 @@ RUN a2ensite 000-default.conf \
     && a2enmod rewrite
 
 # App code
-COPY app/ /var/www/html/app/
+COPY . /var/www/html/
 
-# Permissions
+# Fix cert permissions
 RUN chown -R www-data:www-data /var/www/html \
-    && chmod -R 755 /var/www/html
+    && chmod -R 755 /var/www/html \
+    && chmod 644 /var/www/html/certs/ca.pem /var/www/html/certs/client-cert.pem \
+    && chmod 600 /var/www/html/certs/client-key.pem
 
 EXPOSE 80
 
