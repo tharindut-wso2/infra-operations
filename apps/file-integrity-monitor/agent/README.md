@@ -35,7 +35,7 @@ fim-agent/
 ```
 
 ## Architectural Diagram
-<img width="1473" height="1065" alt="mermaid-diagram (3)" src="https://github.com/user-attachments/assets/99400b79-78e4-40d5-8714-1d532fd3e608" />
+<img width="1073" height="865" alt="mermaid-diagram (3)" src="https://github.com/user-attachments/assets/99400b79-78e4-40d5-8714-1d532fd3e608" />
 
 
 ## Sequence diagram
