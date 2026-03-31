@@ -1,4 +1,4 @@
-# File Integrity Monitor (FIM) Agent
+# File Integrity Monitor Agent (FIM-Agent)
 
 The File Integrity Monitor (FIM) Agent is a host-based monitoring component that detects and records file changes by leveraging Linux `auditd` logs. Its primary purpose is to transform low-level audit events into structured, meaningful file integrity records that can be used for security monitoring, operational auditing, and forensic analysis.
 
