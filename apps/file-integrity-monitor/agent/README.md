@@ -102,56 +102,12 @@ sudo bash fim-agent-installation.sh
 Note
 The installation may take around 1 to 2 minutes to complete depending on the machine and network speed.
 
-### 3. Verify successful installation
-
-After the script completes successfully, the terminal will show output similar to the following:
-```
-============================================================
-FIM Agent installation completed successfully.
-============================================================
-
-Files installed to:
-  ${FIM_DIR}
-
-Downloaded files:
-  ${AGENT_DST}
-  ${UPLOADER_DST}
-  ${CONF_DST}
-  ${ENV_SAMPLE_DST}
-  ${ENV_DST}
-
-IMPORTANT:
-Before starting the services, update your credentials in:
-  1. ${CONF_DST}
-  2. ${ENV_DST}
-
-Suggested commands:
-  nano ${CONF_DST}
-  nano ${ENV_DST}
-
-After updating credentials, run:
-  systemctl enable fim.service
-  systemctl enable data-uploader.service
-  systemctl start fim.service
-  systemctl start data-uploader.service
-
-Check status:
-  systemctl status fim.service
-  systemctl status data-uploader.service
-
-View logs:
-  journalctl -u fim.service -f
-  journalctl -u data-uploader.service -f
-
-Installer log:
-  ${LOG_FILE}
-```
-### 4. Update configuration files
+### 3. Update configuration files
 
 After installation, update the following configuration files with the required S3 bucket and AWS credential details:
 ```
-nano /home/fimuser/FIM/fim-agent.conf
-nano /home/fimuser/FIM/.env
+sudo vim /home/fimuser/FIM/fim-agent.conf
+sudo vim /home/fimuser/FIM/.env
 ```
 Make sure the following values are properly configured:
 
@@ -183,7 +139,7 @@ The following parameters in `fim-agent.conf` are important because they directly
 - **`FILE_SIZE_MB = 10`**  
   This setting defines the maximum JSON file size allowed for upload to S3. It is important because it helps control storage and transfer size, avoids oversized uploads, and ensures the upload process remains manageable and efficient.
 
-### 5. Enable and start the services
+### 4. Enable and start the services
 
 After updating the configuration, enable and start both services:
 ```
@@ -192,14 +148,14 @@ systemctl enable data-uploader.service
 systemctl start fim.service
 systemctl start data-uploader.service
 ```
-### 6. Check service status
+### 5. Check service status
 
 Use the following commands to verify that both services are running correctly:
 ```
 systemctl status fim.service
 systemctl status data-uploader.service
 ```
-### 7. View logs
+### 6. View logs
 
 To monitor service logs in real time:
 ```
