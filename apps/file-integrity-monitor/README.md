@@ -306,7 +306,7 @@ Together, they provide a full pipeline from **file change detection** to **centr
 
 ```text
 file-integrity-monitor/
-├── fim-agent/
+├── agent/
 ├── dashboard/
 └── README.md
 ```
@@ -315,7 +315,81 @@ file-integrity-monitor/
 
 ## Detailed Documentation
 
-For component-level setup and implementation details, refer to:
+For component-level setup instructions, refer to the following documents:
 
-* `fim-agent/README.md`
-* `dashboard/README.md`
+- `agent/README.md`
+- `dashboard/README.md`
+
+## Deployment Documentation
+
+### Prerequisites
+
+Before configuring the `file-integrity-monitor` components, create and configure a shared S3 bucket.
+
+#### S3 Bucket and IAM Setup
+
+1. Create a common S3 bucket with an appropriate name.
+2. Create two separate IAM users:
+   - One IAM user for the Agent component
+   - One IAM user for the Dashboard component
+3. Store the `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` for both users in a secure location.
+4. Attach the following IAM policy to the Agent-IAM user.
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowUploaderToListBucketAndPutObjects",
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListBucket",
+        "s3:PutObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::<ENTER-YOUR-S3-BUCKET-NAME>",
+        "arn:aws:s3:::<ENTER-YOUR-S3-BUCKET-NAME>/*"
+      ]
+    }
+  ]
+}
+```
+
+5. Attach the following IAM policy to the Dashboard-IAM user.
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowListBucket",
+      "Effect": "Allow",
+      "Action": "s3:ListBucket",
+      "Resource": "arn:aws:s3:::<ENTER-YOUR-S3-BUCKET-NAME>"
+    },
+    {
+      "Sid": "AllowGetObject",
+      "Effect": "Allow",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::<ENTER-YOUR-S3-BUCKET-NAME>/*"
+    },
+    {
+      "Sid": "AllowDeleteObject",
+      "Effect": "Allow",
+      "Action": "s3:DeleteObject",
+      "Resource": "arn:aws:s3:::<ENTER-YOUR-S3-BUCKET-NAME>/*"
+    }
+  ]
+}
+```
+
+## Component Installation
+
+Install and verify the Dashboard component first. After the Dashboard is running successfully, proceed with the Agent installation.
+
+Installation instructions are available in the following files:
+
+- `dashboard/INSTALL.md`
+- `agent/INSTALL.md`
+
+Follow these installation guides to deploy the `file-integrity-monitor` components.
