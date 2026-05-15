@@ -259,20 +259,6 @@ flowchart TB
 
 ---
 
-## Main Use Cases
-
-The File Integrity Monitor product is useful for:
-
-* Monitoring important file changes on Linux systems
-* Operational auditing
-* Evidence generation
-* Investigating unexpected modifications
-* Centralized visibility across multiple machines
-* Reviewing file diffs and related context
-* Exporting collected results for further analysis
-
----
-
 ## Product Summary
 
 The **File Integrity Monitor (FIM)** product combines **fim-agent** and **dashboard** into one complete monitoring solution.
