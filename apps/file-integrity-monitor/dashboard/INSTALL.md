@@ -236,6 +236,14 @@ docker build -t fim-data-collector ./data-collector
 
 ## 9. Run the Data Collector Container
 
+❌❌❌❌
+
+>Please note:
+
+>**Added the credentials (AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY) for the previously created IAM user for the Dashboard component, along with the S3 bucket details.**
+
+❌❌❌❌
+
 Fill in the required environment variable values before running the command.
 
 ```bash
