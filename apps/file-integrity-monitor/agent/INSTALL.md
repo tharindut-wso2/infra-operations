@@ -9,3 +9,40 @@
    ```bash
    bash fim-agent-installer.sh
 4. After the fim-agent installation completes successfully, follow the on-screen instructions to finish the setup.
+
+❌❌❌❌
+
+>Please note:
+
+>**Added the credentials (AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY) for the previously created IAM user for the Agent component, along with the S3 bucket details.**
+
+❌❌❌❌
+
+```
+
+IMPORTANT:
+Before starting the services, update your credentials in:
+  1. /home/fimuser/FIM/fim-agent.conf
+  2. /home/fimuser/FIM/.env
+
+Suggested commands:
+  nano /home/fimuser/FIM/fim-agent.conf
+  nano /home/fimuser/FIM/.env
+
+After updating credentials, run:
+  systemctl enable fim.service
+  systemctl enable data-uploader.service
+  systemctl start fim.service
+  systemctl start data-uploader.service
+
+Check status:
+  systemctl status fim.service
+  systemctl status data-uploader.service
+
+View logs:
+  journalctl -u fim.service -f
+  journalctl -u data-uploader.service -f
+
+Installer log:
+  /var/log/fim_install.log
+```
