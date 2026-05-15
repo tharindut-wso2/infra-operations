@@ -188,24 +188,6 @@ sequenceDiagram
 
 ---
 
-## Why This Product Exists
-
-Reviewing raw audit logs directly is difficult, especially when monitoring multiple machines.
-
-The File Integrity Monitor product solves that problem by turning fragmented system-level records into a centralized and readable monitoring flow.
-
-Instead of manually checking raw logs across many servers, teams can use this product to:
-
-* Detect important file changes
-* Preserve change evidence
-* Centralize records from many hosts
-* Investigate changes through a dashboard
-* Support troubleshooting, operational audits, and forensic review
-
-This makes the product useful both for day-to-day operations and for security-focused investigations.
-
----
-
 ## Core Product Capabilities
 
 ```mermaid
