@@ -284,3 +284,11 @@ Open the following URL in your browser and verify that the dashboard loads succe
 ```text
 https://<YOUR-CENTRALISED-VM-IP>/login.php
 ```
+
+Dashboard should visible like this.
+
+<img width="1511" height="945" alt="image" src="https://github.com/user-attachments/assets/c53733a6-8225-4404-ab8a-17d0b65fbcb2" />
+
+Please Add 'your-dashboard-user' and 'your-dashboard-password' to authenticate the login.
+
+<img width="2048" height="1286" alt="fim-dashboard-table-blurred" src="https://github.com/user-attachments/assets/3cae17aa-1523-4928-9bb8-f25eb6de3001" />
