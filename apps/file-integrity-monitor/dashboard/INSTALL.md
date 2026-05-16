@@ -275,7 +275,7 @@ docker run -d \
   --network host \
   --name fim-data-analyzer \
   --add-host mysql-server:127.0.0.1 \
-  -e DB_HOST=127.0.0.1 \
+  -e DB_HOST=mysql-server \
   -e DB_USER=fim_user \
   -e DB_PASS= \
   -e DB_NAME=FIMDB \
