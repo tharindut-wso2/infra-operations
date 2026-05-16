@@ -259,9 +259,9 @@ docker run -d \
   -e DB_USER=fim_user \
   -e DB_PASSWORD= \
   -e DB_NAME=FIMDB \
-  -e DB_SSL_CA= /app/certs/ca.pem \
-  -e DB_SSL_CERT= /app/certs/client-cert.pem \
-  -e DB_SSL_KEY= /app/certs/client-key.pem \
+  -e DB_SSL_CA=/app/certs/ca.pem \
+  -e DB_SSL_CERT=/app/certs/client-cert.pem \
+  -e DB_SSL_KEY=/app/certs/client-key.pem \
   fim-data-collector
 ```
 
