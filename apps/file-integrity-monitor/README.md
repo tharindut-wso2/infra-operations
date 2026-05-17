@@ -296,7 +296,7 @@ Before configuring the `file-integrity-monitor` components, create and configure
 
 #### S3 Bucket and IAM Setup
 
-1. Create a common S3 bucket with an appropriate name.
+1. Create a common S3 bucket with an appropriate name and **Block public access turn ON**.
 2. Create two separate IAM users:
    - One IAM user for the Agent component
    - One IAM user for the Dashboard component
