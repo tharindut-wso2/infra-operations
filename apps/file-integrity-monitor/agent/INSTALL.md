@@ -6,6 +6,11 @@ wget -O fim-agent-installation.sh https://raw.githubusercontent.com/wso2-open-op
 
 2. Edit the `fim-agent-installer.sh` file and update the `INSTALL_REF` value with the latest commit ID.
 
+Ex: Commit ID:
+
+<img width="2168" height="609" alt="image" src="https://github.com/user-attachments/assets/f6c1a866-7ec3-44c3-b12f-bc1a948651d9" />
+
+
 <img width="1181" height="194" alt="image" src="https://github.com/user-attachments/assets/a6e01db8-2e65-42df-b95d-c93374dd8e9e" />
 
 3. Run the installer script:
