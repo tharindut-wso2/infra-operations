@@ -19,13 +19,9 @@ Ex: Commit ID:
    bash fim-agent-installer.sh
 4. After the fim-agent installation completes successfully, follow the on-screen instructions to finish the setup.
 
-❌❌❌❌
-
 >Please note:
 
 >**Added the credentials (AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY) for the previously created IAM user for the Agent component, along with the S3 bucket details.**
-
-❌❌❌❌
 
 ```
 
