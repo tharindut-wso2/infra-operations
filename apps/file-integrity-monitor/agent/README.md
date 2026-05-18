@@ -103,12 +103,13 @@ Ex: Commit ID:
 
 <img width="1181" height="194" alt="image" src="https://github.com/user-attachments/assets/a6e01db8-2e65-42df-b95d-c93374dd8e9e" />
 
-3. Run the installer script:
+### 3. Run the installer script:
 
-   ```bash
+   ```
    bash fim-agent-installer.sh
+   ```
 
-### 3. Update configuration files
+### 4. Update configuration files
 
 After installation, update the following configuration files with the required S3 bucket and AWS credential details:
 ```
@@ -145,7 +146,7 @@ The following parameters in `fim-agent.conf` are important because they directly
 - **`FILE_SIZE_MB = 10`**  
   This setting defines the maximum JSON file size allowed for upload to S3. It is important because it helps control storage and transfer size, avoids oversized uploads, and ensures the upload process remains manageable and efficient.
 
-### 4. Enable and start the services
+### 5. Enable and start the services
 
 After updating the configuration, enable and start both services:
 ```
@@ -154,14 +155,14 @@ systemctl enable data-uploader.service
 systemctl start fim.service
 systemctl start data-uploader.service
 ```
-### 5. Check service status
+### 6. Check service status
 
 Use the following commands to verify that both services are running correctly:
 ```
 systemctl status fim.service
 systemctl status data-uploader.service
 ```
-### 6. View logs
+### 7. View logs
 
 To monitor service logs in real time:
 ```
