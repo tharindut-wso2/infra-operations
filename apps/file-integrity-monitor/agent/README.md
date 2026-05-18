@@ -94,6 +94,7 @@ Take this below URL and update the `INSTALL_REF` value with the latest commit ID
 ```
 wget -O fim-agent-installer.sh https://raw.githubusercontent.com/wso2-open-operations/infra-operations/{INSTALL_REF}/apps/file-integrity-monitor/agent/fim-agent/fim-agent-installer.sh
 ```
+
 Ex: Commit ID:
 
 <img width="2048" height="579" alt="image" src="https://github.com/user-attachments/assets/c48271d1-5e6b-446e-a656-6184641ac088" />
