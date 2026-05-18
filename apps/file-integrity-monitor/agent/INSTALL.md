@@ -1,7 +1,7 @@
 1. Download the `fim-agent-installer.sh` file.
 
 ```
-wget -O fim-agent-installation.sh https://raw.githubusercontent.com/wso2-open-operations/infra-operations/dev/apps/file-integrity-monitor/agent/fim-agent/fim-agent-installer.sh
+wget -O fim-agent-installer.sh https://raw.githubusercontent.com/wso2-open-operations/infra-operations/dev/apps/file-integrity-monitor/agent/fim-agent/fim-agent-installer.sh
 ```
 
 2. Edit the `fim-agent-installer.sh` file and update the `INSTALL_REF` value with the latest commit ID.
