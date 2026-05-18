@@ -69,6 +69,7 @@ Alternatively, use the following commands to download the dashboard components:
 
 ```bash
 curl -L https://github.com/wso2-open-operations/infra-operations/archive/refs/heads/main.zip -o infra-operations.zip
+
 sudo apt install unzip -y
 
 unzip infra-operations.zip 'infra-operations-main/apps/file-integrity-monitor/dashboard/*' -d .
