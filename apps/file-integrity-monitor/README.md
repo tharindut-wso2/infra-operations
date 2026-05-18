@@ -281,14 +281,14 @@ file-integrity-monitor/
 
 ---
 
-## ❌❌❌❌❌ Detailed Documentation ❌❌❌❌❌
+## Detailed Documentation
 
 For component-level setup instructions, refer to the following documents:
 
 - `agent/README.md`
 - `dashboard/README.md`
 
-## ❌❌❌❌❌ Deployment Documentation ❌❌❌❌❌
+## Deployment Documentation
 
 ### Prerequisites
 
