@@ -62,13 +62,13 @@ echo "[INFO] Database, table, and user permissions were created successfully."
 Download the FIM dashboard components from the following GitHub repository:
 
 ```text
-https://github.com/tharindut-wso2/infra-operations/tree/main/apps/file-integrity-monitor/dashboard
+https://github.com/wso2-open-operations/infra-operations/tree/main/apps/file-integrity-monitor/dashboard
 ```
 
 Alternatively, use the following commands to download the dashboard components:
 
 ```bash
-curl -L https://github.com/tharindut-wso2/infra-operations/archive/refs/heads/main.zip -o infra-operations.zip
+curl -L https://github.com/wso2-open-operations/infra-operations/archive/refs/heads/main.zip -o infra-operations.zip
 sudo apt install unzip -y
 
 unzip infra-operations.zip 'infra-operations-main/apps/file-integrity-monitor/dashboard/*' -d .
