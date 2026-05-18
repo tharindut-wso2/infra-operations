@@ -17,6 +17,7 @@ Ex: Commit ID:
 
    ```bash
    bash fim-agent-installer.sh
+   ```
 4. After the fim-agent installation completes successfully, follow the on-screen instructions to finish the setup.
 
 >Please note:
