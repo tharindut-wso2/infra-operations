@@ -29,10 +29,6 @@ Before starting the services, update your credentials in:
   1. /home/fimuser/FIM/fim-agent.conf
   2. /home/fimuser/FIM/.env
 
-Suggested commands:
-  nano /home/fimuser/FIM/fim-agent.conf
-  nano /home/fimuser/FIM/.env
-
 After updating credentials, run:
   systemctl enable fim.service
   systemctl enable data-uploader.service
