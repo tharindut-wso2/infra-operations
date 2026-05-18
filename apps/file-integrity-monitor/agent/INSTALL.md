@@ -8,8 +8,7 @@ wget -O fim-agent-installer.sh https://raw.githubusercontent.com/wso2-open-opera
 
 Ex: Commit ID:
 
-<img width="2168" height="609" alt="image" src="https://github.com/user-attachments/assets/f6c1a866-7ec3-44c3-b12f-bc1a948651d9" />
-
+<img width="2048" height="579" alt="image" src="https://github.com/user-attachments/assets/c48271d1-5e6b-446e-a656-6184641ac088" />
 
 <img width="1181" height="194" alt="image" src="https://github.com/user-attachments/assets/a6e01db8-2e65-42df-b95d-c93374dd8e9e" />
 
