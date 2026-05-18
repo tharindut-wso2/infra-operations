@@ -87,20 +87,26 @@ AWS_REGION=
 
 The FIM Agent can be deployed using the provided installer script, which performs the required package installation and system setup in a single execution.
 
-### 1. Download the installer script
+### 1. Download the `fim-agent-installer.sh` file.
 
-Since the installer script is publicly available in this repository, download it using wget:
-```
-wget -O fim-agent-installation.sh https://raw.githubusercontent.com/wso2-open-operations/infra-operations/dev/apps/file-integrity-monitor/agent/fim-agent/fim-agent-installer.sh
-```
-### 2. Run the installer as root
+Take this below URL and update the `INSTALL_REF` value with the latest commit ID.
 
-Run the installer script with root privileges:
 ```
-sudo bash fim-agent-installation.sh
+wget -O fim-agent-installer.sh https://raw.githubusercontent.com/wso2-open-operations/infra-operations/{INSTALL_REF}/apps/file-integrity-monitor/agent/fim-agent/fim-agent-installer.sh
 ```
-Note
-The installation may take around 1 to 2 minutes to complete depending on the machine and network speed.
+Ex: Commit ID:
+
+<img width="2048" height="579" alt="image" src="https://github.com/user-attachments/assets/c48271d1-5e6b-446e-a656-6184641ac088" />
+
+### 2. Edit the `fim-agent-installer.sh` file and update the `INSTALL_REF` value with the latest commit ID.
+
+
+<img width="1181" height="194" alt="image" src="https://github.com/user-attachments/assets/a6e01db8-2e65-42df-b95d-c93374dd8e9e" />
+
+3. Run the installer script:
+
+   ```bash
+   bash fim-agent-installer.sh
 
 ### 3. Update configuration files
 
