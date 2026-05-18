@@ -289,7 +289,7 @@ Open the following URL in your browser and verify that the dashboard loads succe
 https://<YOUR-CENTRALISED-VM-IP>/login.php
 ```
 
-Dashboard should visible like this.
+Dashboard should be visible like this.
 
 <img width="1511" height="945" alt="image" src="https://github.com/user-attachments/assets/c53733a6-8225-4404-ab8a-17d0b65fbcb2" />
 
